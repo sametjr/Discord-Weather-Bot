@@ -8,7 +8,7 @@ const pool = new Client({
   user: 'postgres',
   host: 'localhost',
   database: 'deneme',
-  password: "asddsa123"
+  password: process.env.pgpassword
 })
 
 pool.connect();
